@@ -9,11 +9,11 @@ plugins:
   - jekyll-sitemap
 
 # Minimal Mistakes - réglages rapides
-logo: /assets/images/TrendOptimizer.fr.png
+logo: /assets/images/logo-trendoptimizer.png
 locale: fr
 minimal_mistakes_skin: default  # (contrast, dark, neon, air, etc.)
 author:
   name: TrendOptimizer
-  avatar: /assets/images/TrendOptimizer.fr black.png
+  avatar: /assets/images/logo-trendoptimizer-black.png
   bio: "Indicateurs pour suivre la tendance, rebonds et renversements."
 include: ["_pages"]
