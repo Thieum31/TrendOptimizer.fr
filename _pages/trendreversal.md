@@ -10,5 +10,5 @@ Affiche un(e) **support (bleu)** / **résistance (rouge)** **dynamique** au‑de
 Les signaux sont filtrés selon la **pente** et la **réaction des prix** ; un retournement potentiel apparaît par une **grosse bulle** de couleur opposée.  
 Combiné avec *DynamicLevel©*, les probabilités s’améliorent.
 
-![TrendReversal](/assets/images/TrendReversal.PNG){: .align-center}
+![TrendReversal](/assets/images/trend-reversal.png){: .align-center}
 
