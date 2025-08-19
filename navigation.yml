@@ -1,0 +1,7 @@
+main:
+  - title: "Accueil"
+    url: /
+  - title: "Indicateurs"
+    url: /indicateurs/
+  - title: "Contact"
+    url: /contact/
