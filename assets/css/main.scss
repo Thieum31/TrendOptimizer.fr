@@ -1,3 +1,189 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+/* Import de la police OCR A Extended */
+@import url('https://fonts.cdnfonts.com/css/ocr-a-extended');
+
+/* Import du thème Minimal Mistakes */
+@import "minimal-mistakes/skins/default"; // skin clair
+@import "minimal-mistakes"; 
+
+/* =====================
+   TYPOGRAPHIE GLOBALE
+   ===================== */
+:root {
+  --mm-font-sans: 'OCR A Extended', monospace;
+  --mm-font-mono: 'OCR A Extended', monospace;
+}
+
+body {
+  font-family: 'OCR A Extended', monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'OCR A Extended', monospace;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* =====================
+   HEADER / FOOTER
+   ===================== */
+.site-header {
+  background: #111;
+  color: white;
+}
+
+.site-title, .site-title a {
+  color: white !important;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.site-footer {
+  background: #222;
+  color: #bbb;
+  font-size: 0.9rem;
+  padding: 2rem 0;
+}
+
+.site-footer a {
+  color: #ccc;
+}
+
+/* =====================
+   NAVIGATION
+   ===================== */
+.greedy-nav {
+  font-size: 0.95rem;
+  background: #111;
+}
+
+.greedy-nav a {
+  color: #eee;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.greedy-nav a:hover {
+  color: #1e90ff;
+}
+
+/* =====================
+   CONTENU
+   ===================== */
+.page__content {
+  max-width: 900px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.page__content img {
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 90%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.page__content h2, 
+.page__content h3 {
+  border-left: 4px solid #1e90ff;
+  padding-left: 8px;
+}
+
+/* =====================
+   BOUTONS & LIENS
+   ===================== */
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn-custom {
+  background: #1e90ff;
+  color: #fff !important;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background 0.2s ease;
+}
+
+.btn-custom:hover {
+  background: #0d6efd;
+}
+
+/* =====================
+   DARK MODE
+   ===================== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111;
+    color: #e5e5e5;
+  }
+
+  .site-header, .greedy-nav {
+    background: #000;
+    color: #eee;
+  }
+
+  .site-title, .site-title a {
+    color: #1e90ff !important;
+  }
+
+  .site-footer {
+    background: #000;
+    color: #888;
+  }
+
+  a {
+    color: #4da6ff;
+  }
+
+  a:hover {
+    color: #82cfff;
+  }
+
+  .page__content img {
+    border: 2px solid #444;
+    box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+  }
+
+  .page__content h2, 
+  .page__content h3 {
+    border-left: 4px solid #4da6ff;
+  }
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .site-title {
+    font-size: 1.4rem;
+  }
+}
+
 /* =====================
    DARK MODE FORCÉ (toggle)
    ===================== */
