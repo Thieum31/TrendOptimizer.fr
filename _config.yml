@@ -1,19 +1,76 @@
+# =========================
+#   Site / Général
+# =========================
 title: TrendOptimizer
-description: Set d’indicateurs multi-unités et multi-actifs
+description: Set d’indicateurs multi‑unités et multi‑actifs
 url: https://trendoptimizer.fr
-theme: null
-remote_theme: "mmistakes/minimal-mistakes"   # utilisation en remote theme
+locale: fr
+permalink: /:categories/:title/
+
+# Domaine personnalisé (déjà dans CNAME)
+# CNAME: trendoptimizer.fr
+
+# =========================
+#   Thème Minimal Mistakes
+# =========================
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: default   # (contrast, dark, neon, air, etc.)
+
+# Logo & avatar (noms fichiers corrigés, en minuscules sans espaces)
+logo: /assets/images/logo-trendoptimizer.png
+
+author:
+  name: TrendOptimizer
+  avatar: /assets/images/logo-trendoptimizer-black.png
+  bio: "Indicateurs pour suivre la tendance, rebonds et renversements."
+
+# Activer le fil d’Ariane (breadcrumb)
+breadcrumbs: true
+
+# =========================
+#   Plugins
+# =========================
 plugins:
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
 
-# Minimal Mistakes - réglages rapides
-logo: /assets/images/logo-trendoptimizer.png
-locale: fr
-minimal_mistakes_skin: default  # (contrast, dark, neon, air, etc.)
-author:
-  name: TrendOptimizer
-  avatar: /assets/images/logo-trendoptimizer-black.png
-  bio: "Indicateurs pour suivre la tendance, rebonds et renversements."
+# =========================
+#   Contenu / Dossiers
+# =========================
+# Permet à Jekyll d’inclure le dossier de pages
 include: ["_pages"]
+
+# Par défauts utiles pour éviter de répéter le front matter
+defaults:
+  # Pages sous _pages : layout single + TOC sticky
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: single
+      toc: true
+      toc_sticky: true
+      author_profile: false
+      breadcrumbs: true
+
+  # Page d’accueil
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      author_profile: true
+
+# =========================
+#   Feed / Sitemap
+# =========================
+# Config minimale, laisser jekyll-feed et jekyll-sitemap faire leur travail
+
+# =========================
+#   Options diverses (facultatif)
+# =========================
+# kramdown:
+#   input: GFM
+#   hard_wrap: false
+#   syntax_highlighter_opts:
+#     inline_theme: github
