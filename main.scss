@@ -1,0 +1,59 @@
+/* =====================
+   DARK MODE FORCÉ (toggle)
+   ===================== */
+body.dark-mode {
+  background-color: #111 !important;
+  color: #e5e5e5 !important;
+}
+
+body.dark-mode .site-header,
+body.dark-mode .greedy-nav {
+  background: #000 !important;
+  color: #eee !important;
+}
+
+body.dark-mode .site-title, 
+body.dark-mode .site-title a {
+  color: #1e90ff !important;
+}
+
+body.dark-mode .site-footer {
+  background: #000 !important;
+  color: #888 !important;
+}
+
+body.dark-mode a {
+  color: #4da6ff !important;
+}
+
+body.dark-mode a:hover {
+  color: #82cfff !important;
+}
+
+body.dark-mode .page__content img {
+  border: 2px solid #444;
+  box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+}
+
+body.dark-mode .page__content h2, 
+body.dark-mode .page__content h3 {
+  border-left: 4px solid #4da6ff;
+}
+
+/* Bouton toggle */
+.btn-darkmode {
+  margin-left: 1rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  background: transparent;
+  border: 1px solid #666;
+  border-radius: 6px;
+  cursor: pointer;
+  color: inherit;
+  transition: background 0.2s ease;
+}
+
+.btn-darkmode:hover {
+  background: #1e90ff;
+  color: #fff;
+}
