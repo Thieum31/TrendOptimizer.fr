@@ -1,0 +1,21 @@
+main:
+  - title: "Accueil"
+    url: /
+  - title: "Indicateurs"
+    url: /indicateurs/
+    children:
+      - title: "Coloration des bougies"
+        url: /indicateurs/coloration-bougies/
+      - title: "DynamicLevel©"
+        url: /indicateurs/dynamiclevel/
+      - title: "BounceLevel©"
+        url: /indicateurs/bouncelevel/
+      - title: "TrendReversal©"
+        url: /indicateurs/trendreversal/
+      - title: "ZigZagPrice©"
+        url: /indicateurs/zigzagprice/
+      - title: "AttractionPriceLevel©"
+        url: /indicateurs/attractionpricelevel/
+  - title: "Contact"
+    url: /contact/
+
